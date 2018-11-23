@@ -1,0 +1,4 @@
+create a program for creating more quizzes
+change line like 70 something(?) to allow for a config file for selecting the quiz
+create a config file for the program for the selection of quizzes
+make the first program update the config file to make the new quiz automatically available on the main program
