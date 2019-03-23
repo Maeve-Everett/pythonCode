@@ -1,0 +1,14 @@
+These python3.7 programs were made for a project that I was working on for F1 in Schools (www.f1inschools.com). The aim of this program was to run on my laptop on the 'Pit Display' which was a display that we had to make showing off the things that we had done: e.g. sponsors, merch, projects (like this),and other things.
+
+The overall gist of the program is that a window pops up (using Tkinter) that has a start button on. You press the start button on the window and then press the button when it says "GO!". After both people have pressed it (or you pressed both yourself because there isn't anyone else around) it will come up with the times that each person got and who pressed the button first.
+
+The 'RPiReactionTime.py' program is meant to be ran on a Raspberry Pi (raspberrypi.org), with two buttons that I made to attach to the GPIO pins.
+
+The 'keyboardReactionTime.py' program can be ran on anything that has a keyboard using the 'keyboard' moudule (if you don't have this then it can easily be installed through pip). This version uses the 'r' and 'b' keys as those were the colours that I origionally intended the buttons for theRaspberry Pi to be as those are the colours that are actually used at the event.
+
+The 'keyBoardReactionTimeGold.py' program is the same as the other keyboardReactionTime program but with gold instead of red. This was because the origional program that was going to be ran was the Raspberry Pi one however I would have had to have had a TV or monitor for it to work which there wasn't space for so I then decided to use the origional keyboard one which I then thought would have been better if there were physical buttons for you to press that weren't on a keyboard. So, I used some Dualshock 4 controllers for my PS4 along with 'JoyToKey' (joytokey.net), it basically converts controller input into keyboard presses. This meant that the program could be ran on my laptop along with physical buttons. I named it the same as the origional one with 'Gold' on the end as the two controllers that I was using were black and gold, making it easier for people to understand. This one also needs the keyboard module to run.
+
+Known issues:
+-The program sometimes just doesn't work and will stop responding.
+-It will sometimes stop responding when it reaches 1
+-It doesn't like people pressing the button at the same or similar times as eachother (this could be either joytokey or the keyboard module, I don't know)
