@@ -1,0 +1,5 @@
+short route:    32
+long route:     41
+dice:           2d6
+players:        2-4
+start tile:     0
