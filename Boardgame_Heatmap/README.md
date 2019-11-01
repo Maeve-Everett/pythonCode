@@ -6,3 +6,6 @@ Run `main.py` and input the details for your sim. If you want it sorted to show 
  - The screenshot is a really bad thing I did in google sides to show the actual heatmap on our game board, as you can easily tell by looking at it, I am not good at any form of graphics/visual design especially when working with a powerpoint program
  - The layout.txt file is just some details about the board that I needed to make the main program
  - The heatmapdata.txt is the data I used for the screenshot, it was just copied and pasted from the main program's output
+
+## Requirements
+You need to have Python 3.6 or higher to run the programs. For the most stability, install Python 3.7 as that was the version which the programs were developed in.
