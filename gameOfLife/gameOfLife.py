@@ -26,11 +26,15 @@ def CreateGrid(size):
 def SimulateCell(cell, neighbours):
     global grid
     global tempGrid
+
+    # Counting live neighbours to see what the cell should do
     liveNeighbours = 0
     for i in neighbours:
         if grid[i[0]][i[1]] == ON:
             liveNeighbours += 1
-    if liveNeighbours < 2: #something is fucky wucky here or i was an idiot and forgot to change xCord and yCord in the python interpreter
+    
+    # Changes a temp grid in accordance to the neighbour cells
+    if liveNeighbours < 2:
         tempGrid[cell[0]][cell[1]] = OFF
     elif (liveNeighbours == 2 or liveNeighbours == 3) and grid[cell[0]][cell[1]] == ON:
         tempGrid[cell[0]][cell[1]] = ON
@@ -96,18 +100,20 @@ def main():
 def update(data):
     global grid
     global tempGrid
+    # Creates a temp grid to make changes to so that the actual grid is unnafected by the ticks
     tempGrid = np.copy(grid, order='K')
     print(grid)
-    Tick()
+    Tick() # Runs the tick
+    # Updates the grid with the changes in temp grid
     grid = np.copy(tempGrid, order='K')
     mat.set_data(grid)
     return [mat]
 
 # matplotlib setup
 CreateGrid(gridSize)
-
 fig, ax = plt.subplots()
 mat = ax.matshow(grid)
+
 # Main loop function
-ani = animation.FuncAnimation(fig, update, interval=200, save_count=200) # chagne these numbers to change speed
+ani = animation.FuncAnimation(fig, update, interval=200, save_count=200) # Change these numbers to change speed
 plt.show()
