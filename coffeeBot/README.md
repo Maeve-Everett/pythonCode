@@ -6,6 +6,8 @@ You need quite a bit for this and I'm doubtful that it even works anymore but if
 
 For the Python side of things, these are the dependencies of the script.
 
+| Dependencies |
+| --- |
 | icalendar |
 | slackclient |
 | inkyphat |
