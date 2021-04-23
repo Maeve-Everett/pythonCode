@@ -3,7 +3,7 @@ import time
 import numpy
 
 x = []
-n = 6
+n = 8
 
 randomSortTime = []
 bogoSortTime = []
