@@ -8,7 +8,8 @@ window.setWindowTitle("Hello World")
 
 button = QPushButton(window)
 button.setText("Hello World")
-button.show()
+#button.show() # Only needed if not using a QMainWindow
+button.move(100,100)
 
 window.show()
 app.exec()
